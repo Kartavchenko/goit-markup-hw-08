@@ -1,0 +1,27 @@
+:root {
+    /* Основные шрифты */
+    --main-font: Roboto, sans-serif;
+    --secondary-font: Raleway, sans-serif;
+
+    /* Фоны */
+    --white-theme: #ffffff;
+    --secondary-theme: #f5f4fa;
+    --dark-background: #2f303a;
+
+    /* Цвета текста */
+    --main-text: #212121;
+    --gray-text: #757575;
+    --white-text: #ffffff;
+
+    /* Эфект hover */
+    --blue-hover: #2196f3;
+
+    /*Фон кнопки  */
+    --blue-bnt: #2196f3;
+
+    // accen color
+    --accent-color: #2196f3;
+
+    /* cubic */
+    --cubic-anm: cubic-bezier(0.4, 0, 0.2, 1);
+}

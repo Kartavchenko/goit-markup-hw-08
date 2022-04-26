@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="./css/main.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -19,6 +18,13 @@
             <div class="container container__header">
                 <nav class="nav">
                     <a class="nav__header" href="./index.html"><span class="icon">Web</span>Studio</a>
+                    <button class="nav-btn__menu is-open" type="button">
+                        <svg aria-label="переключатель мобильного меню"
+                        width="40" height="40">
+                            <use class="nav-btn__close" href="./images/icons-form.svg#icon-close_40px"></use>
+                            <use class="nav-btn__menu" href="./images/icons-form.svg#icon-menu_40px"></use>
+                        </svg>                        
+                    </button>
                     <ul class="nav__list">
                         <li class="nav__item">
                             <a class="nav__link current" href="./index.html">Студия</a>
