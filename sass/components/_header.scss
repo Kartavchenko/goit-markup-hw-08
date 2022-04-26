@@ -22,30 +22,16 @@
     color: var(--accent-color);
 }
 
-.nav-btn__menu {
-    margin: 0;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-}
-
-.nav-btn__menu .nav-btn__close {
+.nav-container {
     display: none;
-}
+    // position: absolute;
+    // background-color: var(--white-theme);
+    background-color: black;
+    height: 100%;
+    width: 100%;
 
-.nav-btn__menu.is-open .icon-close {
-    display: block;
-}
-
-
-@media screen and (max-width: 480px) {
-    .nav__list {
-        display: none;
+    &.is-open {
+        display: block;
     }
-
-    .contact__list {
-        display: none;
-    }
-    
 }
 

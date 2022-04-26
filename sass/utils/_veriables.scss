@@ -25,3 +25,23 @@
     /* cubic */
     --cubic-anm: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.nav-btn__menu {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    & .nav-btn__close {
+        display: none;
+    }
+
+    &.is-open .nav-btn__close {
+        display: block;
+    }
+
+    &.is-open .nav-btn__burger {
+        display: none;
+    }
+}
+
