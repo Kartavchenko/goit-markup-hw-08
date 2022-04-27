@@ -1,0 +1,22 @@
+@media screen and (min-width: 480px) {
+    .nav {
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    }
+}
+
+
+.nav__header {
+    color: var(--main-text);
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.icon {
+    color: var(--accent-color);
+}

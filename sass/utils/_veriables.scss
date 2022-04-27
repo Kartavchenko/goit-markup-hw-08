@@ -26,22 +26,17 @@
     --cubic-anm: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-btn__menu {
-    margin: 0;
-    padding: 0;
-    border: none;
-    background-color: transparent;
+.container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
 
-    & .nav-btn__close {
-        display: none;
-    }
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        }
 
-    &.is-open .nav-btn__close {
-        display: block;
-    }
-
-    &.is-open .nav-btn__burger {
-        display: none;
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
     }
 }
-

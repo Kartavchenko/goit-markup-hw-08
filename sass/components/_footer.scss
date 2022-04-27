@@ -1,0 +1,155 @@
+.footer {
+    background-color: var(--dark-background);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-contact__link {
+    color: var(--white-text);
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer-contact__address {
+    color: var(--white-text);
+    line-height: 1.71;
+    font-style: normal;
+    margin-bottom: 9px;
+}
+
+.footer-contact__item {
+    margin-bottom: 9px;
+}
+
+.footer-contact__item:last-child {
+    margin-bottom: 0;
+}
+
+.footer-contact__section {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.71;
+
+    transition: color 250ms var(--cubic-anm);
+
+    &:hover,
+    &:focus {
+        color: var(--blue-hover);
+    }
+}
+
+.social-media {
+    margin-left: 70px;
+}
+
+.social-media__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.social-media__list {
+    display: flex;
+}
+
+.social-media__item {
+    margin-right: 10px;
+}
+
+.social-media__item:last-child {
+    margin-right: 0;
+}
+
+.social-media__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+    transition: background-color 250ms var(--cubic-anm);
+
+    &:hover,
+    &:focus {
+        background-color: var(--blue-hover);
+    }
+}
+
+.social-media__icons {
+    fill: var(--white-text);
+}
+
+.form-footer {
+    margin-left: 93px;
+}
+
+.form-footer__title {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.form-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.form-box__input {
+    margin-right: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: transparent;
+    padding-top: 15px;
+    padding-left: 16px;
+    padding-bottom: 15px;
+    width: 358px;
+    height: 50px;
+    outline: none;
+    color: #fff;
+}
+
+.form-box__icon {
+    position: absolute;
+    right: 28px;
+}
+
+.form-box__item {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+}
+
+.form-box__submit {
+    color: var(--white-text);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    background: var(--blue-bnt);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding-top: 10px;
+    padding-right: 62px;
+    padding-bottom: 10px;
+    padding-left: 29px;
+    cursor: pointer;
+}

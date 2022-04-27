@@ -18,19 +18,60 @@
             <div class="container container__header">
                 <nav class="nav">
                     <a class="nav__header" href="./index.html"><span class="icon">Web</span>Studio</a>
-                    <button class="nav-btn__menu is-open" 
-                    type="button" 
+                    <button class="nav-btn__menu is-active" 
+                    type="button"
                     aria-expanded="false"
-                    aria-controls="nav-container"
-                    data-menu-button>
-                        <svg 
-                        aria-label="переключатель мобильного меню"
-                        width="40" height="40">
-                            <use class="nav-btn__close" href="./images/icons-form.svg#icon-close_40px"></use>
-                            <use class="nav-btn__burger" href="./images/icons-form.svg#icon-menu_40px"></use>
-                        </svg>                        
-                    </button>
-                    <div class="nav-container is-open" id="nav-container" data-menu>
+                    data-menu-button>                
+                    <svg class="nav-btn">
+                        <use class="nav-btn__burger" href="./images/icons-form.svg#icon-menu_40px"></use>
+                        <use class="nav-btn__close" href="./images/icons-form.svg#icon-close_40px"></use>
+                    </svg>                        
+                </button>
+                <div class="mobile-overlay is-open" data-menu>
+                    <ul class="nav-mobile__list">
+                        <li class="nav-mobile__item">
+                            <a class="nav-mobile__link" href="./index.html">Студия</a>
+                        </li>
+                        <li class="nav-mobile__item">
+                            <a class="nav-mobile__link" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="nav-mobile__item">
+                            <a class="nav-mobile__link" href="">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="mobile-menu">
+                <ul class="contacts-mobile__list">
+                    <li class="contacts-mobile__item">
+                        <a class="contacts-mobile__tel" href="tel: +38 096 111 11 11">
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                        <li class="contacts-mobile__item">
+                            <a class="contacts-mobile__mail" href="mail: info@devstudio.com">
+                                info@devstudio.com
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="social-mobile__list">
+                        <li class="social-mobile__item">
+                            <a class="social-mobile__link" target="_blank" rel="noopener noreferrer"
+                                href="https://instagram.com">Instagram</a>
+                        </li>
+                        <li class="social-mobile__item">
+                            <a class="social-mobile__link" target="_blank" rel="noopener noreferrer"
+                                href="https://twiter.com">Twitter</a>
+                        </li>
+                        <li class="social-mobile__item">
+                            <a class="social-mobile__link" target="_blank" rel="noopener noreferrer"
+                                href="https://facebook.com">Facebook</a>
+                        </li>
+                        <li class="social-mobile__item">
+                            <a class="social-mobile__link" target="_blank" rel="noopener noreferrer"
+                                href="https://linkedin.com">LinkedIn</a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
                     <ul class="nav__list">
                         <li class="nav__item">
                             <a class="nav__link current" href="./index.html">Студия</a>
@@ -42,30 +83,28 @@
                             <a class="nav__link" href="">Контакты</a>
                         </li>
                     </ul>
-                    <ul class="contact__list">
-                        <li class="contact__item">
-                            <a class="contact__link" href="mailto:info@devstudio.com">
-                                <svg class="contact__icon" width="16" height="12">
-                                    <use href="./images/icons.svg#envelope"></use>
-                                </svg>info@devstudio.com
-                            </a>
-                        </li>
-                        <li class="contact__item">
-                            <a class="contact__link" href="tel:+380961111111">
-                                <svg class="contact__icon" width="10" height="16">
-                                    <use href="./images/icons.svg#smartphone"></use>
-                                </svg>+38 096 111 11 11
-                            </a>
-                        </li>
-                    </ul>
-                    </div>
                 </nav>
-                
+                <ul class="contact__list">
+                    <li class="contact__item">
+                        <a class="contact__link" href="mailto:info@devstudio.com">
+                            <svg class="contact__icon" width="16" height="12">
+                                <use href="./images/icons.svg#envelope"></use>
+                            </svg>info@devstudio.com
+                        </a>
+                    </li>
+                    <li class="contact__item">
+                        <a class="contact__link" href="tel:+380961111111">
+                            <svg class="contact__icon" width="10" height="16">
+                                <use href="./images/icons.svg#smartphone"></use>
+                            </svg>+38 096 111 11 11
+                        </a>
+                    </li>
+                </ul>
             </div>
         </header>
     <main>
         <!--Hero-->
-        <section class="hero">
+        <!-- <section class="hero">
             <div class="container">
             <h1 class="hero__title">Эффективные решения<br>для вашего бизнеса</h1>
                 <button class="hero__btn" type="button" data-modal-open>Заказать услугу</button>
@@ -115,9 +154,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!--Наши преимущества-->
-        <section class="content">
+        <!-- <section class="content">
             <div class="container">
             <h2 hidden>Наши особенности</h2>
             <ul class="content__list">
@@ -159,9 +198,9 @@
                 </li>
             </ul>
             </div>
-        </section>
+        </section> -->
         <!--Чем мы занимаемся-->
-        <section class="section">
+        <!-- <section class="section">
             <div class="container">
             <h2 class="main-title">Чем мы занимаемся</h2>
             <ul class="image__list">
@@ -191,9 +230,9 @@
                 </li>
             </ul>
             </div>
-        </section>
+        </section> -->
         <!--Наша команда-->
-        <section class="section team">
+        <!-- <section class="section team">
             <div class="container">
             <h2 class="main-title">Наша команда</h2>
                 <ul class="team__list">
@@ -347,9 +386,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!-- company -->
-        <section class="section">
+        <!-- <section class="section">
             <div class="container">
                 <h2 class="main-title">Постоянные клиенты</h2>
                 <ul class="company__list">
@@ -397,10 +436,10 @@
                 </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
     </main>
     <!--Подвал-->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container footer-container">
             <div class="footer-contact">
                 <a class="footer-contact__link" href="./index.html"><span class="icon">Web</span>Studio</a>
@@ -462,8 +501,8 @@
                 </div>
             </form>
         </div>
-    </footer>
-    <script src="./js/mobile-menu.js"></script>
+    </footer> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
