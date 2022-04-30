@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
-    <!-- <link rel="stylesheet" href="./css/style.css"> -->
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -18,36 +17,65 @@
     <!-- Navigation-->
         <header class="header">
             <div class="container container__header">
-                <nav class="nav">
-                    <a class="nav__header" href="./index.html"><span class="icon">Web</span>Studio</a>
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a class="nav__link" href="./index.html">Студия</a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link current" href="./portfolio.html">Портфолио</a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-                <ul class="contact__list">
-                    <li class="contact__item">
-                        <a class="contact__link" href="mailto:info@devstudio.com">
-                            <svg class="contact__icon" width="16" height="12">
-                                <use href="./images/icons.svg#envelope"></use>
-                            </svg>info@devstudio.com
-                        </a>
-                    </li>
-                    <li class="contact__item">
-                        <a class="contact__link" href="tel:+380961111111">
-                            <svg class="contact__icon" width="10" height="16">
-                                <use href="./images/icons.svg#smartphone"></use>
-                            </svg>+38 096 111 11 11
-                        </a>
-                    </li>
-                </ul>
+                <a class="nav__header" href="./index.html"><span class="icon">Web</span>Studio</a>
+                <div class="mobile-menu" data-menu>
+                    <nav class="nav">
+                        <ul class="nav__list mobile-nav__list">
+                            <li class="nav__item mobile-nav__item">
+                                <a class="nav__link mobile-nav__link" href="./index.html">Студия</a>
+                            </li>
+                            <li class="nav__item mobile-nav__item">
+                                <a class="nav__link mobile-nav__link current" href="./portfolio.html">Портфолио</a>
+                            </li>
+                            <li class="nav__item mobile-nav__item">
+                                <a class="nav__link mobile-nav__link" href="">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="contact-tablet mobile-contact">
+                        <ul class="contact__list mobile-contact__list">
+                            <li class="contact__item mobile-contact__item">
+                                <a class="contact__link mobile-contact__mail" href="mailto:info@devstudio.com">
+                                    <svg class="contact__icon" width="16" height="12">
+                                        <use href="./images/icons.svg#envelope"></use>
+                                    </svg>info@devstudio.com
+                                </a>
+                            </li>
+                            <li class="contact__item mobile-contact__item">
+                                <a class="contact__link mobile-contact__phone" href="tel:+380961111111">
+                                    <svg class="contact__icon" width="10" height="16">
+                                        <use href="./images/icons.svg#smartphone"></use>
+                                    </svg>+38 096 111 11 11
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="mobile-social__list">
+                            <li class="mobile-social__item">
+                                <a class="mobile-social__link" href="https://instagram.com">Instagram
+                                </a>
+                            </li>
+                            <li class="mobile-social__item">
+                                <a class="mobile-social__link" href="https://twiter.com">Twiter
+                                </a>
+                            </li>
+                            <li class="mobile-social__item">
+                                <a class="mobile-social__link" href="https://facebook.com">Facebook
+                                </a>
+                            </li>
+                            <li class="mobile-social__item">
+                                <a class="mobile-social__link" href="https://linkedin.com">LinkedIn
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="menu-btn is-active" type="button" aria-label="переключатель мобильного меню"
+                    aria-expanded="false" data-menu-button>
+                    <svg class="menu-btn__icon" width="40" height="40">
+                        <use class="menu-btn__icon-open" href="./images/icons-form.svg#icon-close"></use>
+                        <use class="menu-btn__icon-close" href="./images/icons-form.svg#icon-open"></use>
+                    </svg>
+                </button>
             </div>
         </header>
     <main>
@@ -82,8 +110,15 @@
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.
                             </p>
-                        </div>    
-                            <img class="overlay__pic" src="./images/techcryk.jpg" alt="страница веб сайта на ноутбуке" width="370" height="294">
+                        </div>
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/tech_mob/techcryk.jpg 1x, ./images/tech_mob/techcryk@2x.jpg 2x" type="image/jpg">
+                            <source media="(min-width: 768px)" srcset="./images/tech_mob/techcryk_tab.jpg 1x, ./images/tech_mob/techcryk_tab@2x.jpg 2x" type="image/jpg">
+                            <source media="(max-width: 767px)" srcset="./images/tech_mob/techcryk_mob.jpg 1x, ./images/tech_mob/techcryk_mob@2x.jpg 2x" type="image/jpg">
+                            <img class="overlay__pic"
+                            src="./images/tech_mob/techcryk_mob.jpg" 
+                            alt="страница веб сайта на ноутбуке">
+                        </picture>
                             <div class="overlay__border">
                                 <h3 class="overlay__title">Технокряк</h3>
                                 <p class="overlay__description">Веб-сайт</p>
@@ -101,7 +136,12 @@
                             исчерпывающие сведения о компании или частном лице.
                             </p>
                         </div>
-                      <img class="overlay__pic" src="./images/poster-orlean-colden.jpg" alt="постер баскетбольный два баскетболиста" width="370" height="294">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/tech_mob/poster-orlean-colden.jpg 1x, ./images/tech_mob/poster-orlean-colden@2x.jpg 2x" type="image/jpg">
+                            <source media="(min-width: 768px)" srcset="./images/tech_mob/poster-orlean-colden_tab.jpg 1x, ./images/tech_mob/poster-orlean-colden_tab@2x.jpg 2x" type="image/jpg">
+                            <source media="(max-width: 767px)" srcset="./images/tech_mob/poster-orlean-colden_mob.jpg 1x, ./images/tech_mob/poster-orlean-colden_mob@2x.jpg 2x" type="image/jpg">
+                            <img class="overlay__pic" src="./images/tech_mob/poster-orlean-colden_mob.jpg" alt="постер баскетбольный два баскетболиста">
+                        </picture>
                     <div class="overlay__border">
                       <h3 class="overlay__title">Постер New Orlean vs Golden Star</h3>
                         <p class="overlay__description">Дизайн</p>
@@ -119,7 +159,12 @@
                                 исчерпывающие сведения о компании или частном лице.
                             </p>
                         </div>
-                      <img class="overlay__pic" src="./images/seafood.jpg" alt="логотип ресторана seafood" width="370" height="294">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/tech_mob/seafood.jpg 1x, ./images/tech_mob/seafood@2x.jpg 2x" type="image/jpg">
+                            <source media="(min-width: 768px)" srcset="./images/tech_mob/seafood_tab.jpg 1x, ./images/tech_mob/seafood_tab@2x.jpg 2x" type="image/jpg">
+                            <source media="(max-width: 767px)" srcset="./images/tech_mob/seafood_mob.jpg 1x, ./images/tech_mob/seafood_mob@2x.jpg 2x" type="image/jpg">
+                            <img class="overlay__pic" src="./images/tech_mob/seafood_mob.jpg" alt="логотип ресторана seafood">
+                        </picture>
                     <div class="overlay__border">
                       <h3 class="overlay__title">Ресторан Seafood</h3>
                         <p class="overlay__description">Приложение</p>
@@ -137,7 +182,12 @@
                                 исчерпывающие сведения о компании или частном лице.
                             </p>
                         </div>
-                      <img class="overlay__pic" src="./images/prime.jpg" alt="наушники" width="370" height="294">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/tech_mob/prime.jpg 1x, ./images/tech_mob/prime@2x.jpg 2x" type="image/jpg">
+                            <source media="(min-width: 768px)" srcset="./images/tech_mob/prime_tab.jpg 1x, ./images/tech_mob/prime_tab@2x.jpg 2x" type="image/jpg">
+                            <source media="(max-width: 767px)" srcset="./images/tech_mob/prime_mob.jpg 1x, ./images/tech_mob/prime_mob@2x.jpg 2x" type="image/jpg">
+                            <img class="overlay__pic" src="./images/tech_mob/prime_mob.jpg" alt="наушники">
+                        </picture>
                     <div class="overlay__border">
                       <h3 class="overlay__title">Проект Prime</h3>
                         <p class="overlay__description">Маркетинг</p>
@@ -155,7 +205,12 @@
                                 исчерпывающие сведения о компании или частном лице.
                             </p>
                         </div>
-                      <img class="overlay__pic" src="./images/boxes.jpg" alt="картонные упаковочные коробки" width="370" height="294">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/tech_mob/boxes.jpg 1x, ./images/tech_mob/boxes@2x.jpg 2x" type="image/jpg">
+                            <source media="(min-width: 768px)" srcset="./images/tech_mob/boxes_tab.jpg 1x, ./images/tech_mob/boxes_tab@2x.jpg 2x" type="image/jpg">
+                            <source media="(max-width: 767px)" srcset="./images/tech_mob/boxes_mob.jpg 1x, ./images/tech_mob/boxes_mob@2x.jpg 2x" type="image/jpg">
+                            <img class="overlay__pic" src="./images/tech_mob/boxes_mob.jpg" alt="картонные упаковочные коробки">
+                        </picture>
                     <div class="overlay__border">
                       <h3 class="overlay__title">Проект Boxes</h3>
                         <p class="overlay__description">Приложение</p>
@@ -173,7 +228,12 @@
                                 исчерпывающие сведения о компании или частном лице.
                             </p>
                         </div>
-                      <img class="overlay__pic" src="./images/borders.jpg" alt="страница сайта" width="370" height="294">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/tech_mob/borders.jpg 1x, ./images/tech_mob/borders@2x.jpg 2x" type="image/jpg">
+                            <source media="(min-width: 768px)" srcset="./images/tech_mob/borders_tab.jpg 1x, ./images/tech_mob/borders_tab@2x.jpg 2x" type="image/jpg">
+                            <source media="(max-width: 767px)" srcset="./images/tech_mob/borders_mob.jpg 1x, ./images/tech_mob/borders_mob@2x.jpg 2x" type="image/jpg">
+                            <img class="overlay__pic" src="./images/tech_mob/borders_mob.jpg" alt="страница сайта">
+                        </picture>
                     <div class="overlay__border">
                       <h3 class="overlay__title">Inspiration has no Borders</h3>
                         <p class="overlay__description">Веб-сайт</p>
@@ -191,7 +251,12 @@
                                 исчерпывающие сведения о компании или частном лице.
                             </p>
                         </div>
-                      <img class="overlay__pic" src="./images/limited-edition.jpg" alt="книжное ездание Limited Edition" width="370" height="294">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/tech_mob/limited-edition.jpg 1x, ./images/tech_mob/limited-edition@2x.jpg 2x" type="image/jpg">
+                            <source media="(min-width: 768px)" srcset="./images/tech_mob/limited-edition_tab.jpg 1x, ./images/tech_mob/limited-edition_tab@2x.jpg 2x" type="image/jpg">
+                            <source media="(max-width: 767px)" srcset="./images/tech_mob/limited-edition_mob.jpg 1x, ./images/tech_mob/limited-edition_mob@2x.jpg 2x" type="image/jpg">
+                            <img class="overlay__pic" src="./images/tech_mob/limited-edition_mob.jpg" alt="книжное ездание Limited Edition">
+                        </picture>
                     <div class="overlay__border">
                       <h3 class="overlay__title">Издание Limited Edition</h3>
                         <p class="overlay__description">Дизайн</p>
@@ -209,7 +274,12 @@
                                 исчерпывающие сведения о компании или частном лице.
                             </p>
                         </div>
-                      <img class="overlay__pic" src="./images/lab.jpg" alt="ярлык с надписью lab" width="370" height="294">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/tech_mob/lab.jpg 1x, ./images/tech_mob/lab@2x.jpg 2x" type="image/jpg">
+                            <source media="(min-width: 768px)" srcset="./images/tech_mob/lab_tab.jpg 1x, ./images/tech_mob/lab_tab@2x.jpg 2x" type="image/jpg">
+                            <source media="(max-width: 767px)" srcset="./images/tech_mob/lab_mob.jpg 1x, ./images/tech_mob/lab_mob@2x.jpg 2x" type="image/jpg">
+                            <img class="overlay__pic" src="./images/tech_mob/lab_mob.jpg" alt="ярлык с надписью lab">
+                        </picture>
                     <div class="overlay__border">
                       <h3 class="overlay__title">Проект LAB</h3>
                         <p class="overlay__description">Маркетинг</p>
@@ -227,7 +297,12 @@
                                 исчерпывающие сведения о компании или частном лице.
                             </p>
                         </div>
-                      <img class="overlay__pic" src="./images/growing.jpg" alt="страница сайта growing business" width="370" height="294">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/tech_mob/growing.jpg 1x, ./images/tech_mob/growing_tab@2x.jpg 2x" type="image/jpg">
+                            <source media="(min-width: 768px)" srcset="./images/tech_mob/growing_tab.jpg 1x, ./images/tech_mob/growing_tab@2x.jpg 2x" type="image/jpg">
+                            <source media="(max-width: 767px)" srcset="./images/tech_mob/growing_mob.jpg 1x, ./images/tech_mob/growing_mob@2x.jpg 2x" type="image/jpg">
+                            <img class="overlay__pic" src="./images/tech_mob/growing.jpg" alt="страница сайта growing business">
+                        </picture>
                     <div class="overlay__border">
                       <h3 class="overlay__title">Growing Business</h3>
                         <p class="overlay__description">Приложение</p>
@@ -305,5 +380,6 @@
         </form>
     </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
