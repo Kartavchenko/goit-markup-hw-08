@@ -1,21 +1,75 @@
 .hero {
-    background-image: linear-gradient(to right,
+    @media not all,
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(../images/background-hero.jpg);
+        url(../images/background-hero@2x.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }    
     background-color: var(--dark-background);
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
 }
+
+.hero {
+    @media not all,
+    screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: 768px) and (min-resolution: 192dpi),
+    screen and (min-width: 768px) and (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/background-hero@2x.jpg);
+        
+    }
+}
+
+.hero { 
+    @media not all,
+    screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: 1200px) and (min-resolution: 192dpi),
+    screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/background-hero@2x.jpg);
+        
+    }
+}
+
+.hero {
+    @media screen and (min-width: 1200px) {
+        height: 600px;
+        max-width: 1600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+}
+
 
 .hero__title {
     color: var(--white-text);
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.61;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+}
+
+.hero__title {
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+    }
 }
 
 .hero__btn {

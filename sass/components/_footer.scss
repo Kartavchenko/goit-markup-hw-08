@@ -5,8 +5,43 @@
 }
 
 .footer-container {
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+.footer-contact__tablet {
     display: flex;
-    align-items: baseline;
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+        display: flex;  
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        margin-bottom: 60px;
+    }
+}
+
+.footer-contact {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-right: 165px;
+    }
+}
+
+.footer-contact__list {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    }
+    
 }
 
 .footer-contact__link {
@@ -47,7 +82,9 @@
 }
 
 .social-media {
-    margin-left: 70px;
+    @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+    }
 }
 
 .social-media__text {
@@ -61,6 +98,11 @@
 
 .social-media__list {
     display: flex;
+    justify-content: center;
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 60px;
+    }
+    
 }
 
 .social-media__item {
@@ -93,7 +135,9 @@
 }
 
 .form-footer {
-    margin-left: 93px;
+    @media screen and (min-width: 1200px) {
+        margin-left: 93px;
+    }
 }
 
 .form-footer__title {
@@ -110,10 +154,19 @@
     display: flex;
     align-items: center;
     position: relative;
+    @media screen and (max-width: 1200px) {
+        flex-direction: column;
+    }
 }
 
 .form-box__input {
-    margin-right: 10px;
+    @media screen and (min-width: 1200px) {
+        margin-right: 10px;
+        width: 358px;
+    }
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 20px;
+    }
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -121,15 +174,23 @@
     padding-top: 15px;
     padding-left: 16px;
     padding-bottom: 15px;
-    width: 358px;
+    width: 450px;
     height: 50px;
     outline: none;
     color: #fff;
 }
 
 .form-box__icon {
+    @media screen and (min-width: 768px) {
+        right: 295px;
+    }
+    @media screen and (min-width: 1200px) {
+        right: 28px;
+    }
     position: absolute;
-    right: 28px;
+    right: 150px;
+    bottom: 12px;
+    
 }
 
 .form-box__item {

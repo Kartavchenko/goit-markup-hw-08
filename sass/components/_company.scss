@@ -1,18 +1,27 @@
 .company__list {
     display: flex;
-    align-items: center;
+    // align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
 }
 
 .company__item {
     margin-right: 30px;
+    margin-bottom: 30px;
     height: 92px;
-    width: 170px;
+    width: calc((100% - 60px) / 2);
+
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 90px) / 4);
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 150px) / 7);
+    }
 }
 
-.company__item:last-child {
-    margin-right: 0;
-}
 
 .company__link {
     display: flex;

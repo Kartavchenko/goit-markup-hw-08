@@ -1,5 +1,5 @@
 .backdrop {
-    z-index: 2;
+    z-index: 20;
     position: fixed;
     top: 0;
     left: 0;
@@ -9,6 +9,13 @@
     opacity: 1;
     transition: opacity 250ms var(--cubic-anm), visibility 250ms var(--cubic-anm);
 }
+
+// .backdrop {
+//     @media screen and (max-width: 767px) {
+//         padding-right: 55px;
+//         padding-left: 55px;
+//     }
+// }
 
 .backdrop.is-hidden {
     opacity: 0;
@@ -25,12 +32,26 @@
     top: 50%;
     left: 50%;
     padding: 40px;
-    width: 528px;
-    height: 581px;
+    width: 100%;
+    
     background-color: #fff;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms var(--cubic-anm);
 }
+
+.modal {
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
+}
+
+.modal {
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+        height: 581px;
+    }
+}
+
 
 .modal-close__btn {
     position: absolute;
@@ -52,7 +73,6 @@
 }
 
 
-
 .modal-close__icon {
     width: 18px;
     height: 18px;
@@ -63,10 +83,17 @@
     color: var(--main-text);
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 30px;
+}
+
+.form__title {
+    @media screen and (min-width: 1200px) {
+        font-size: 20px;
+        line-height: 1.15;
+    }
 }
 
 .form__field {
@@ -114,21 +141,22 @@
     border-radius: 4px;
     transition: border-color 250ms var(--cubic-anm);
     resize: none;
-}
 
-.form__input:nth-last-child(2) {
-    padding-top: 12px;
-    padding-left: 16px;
-}
-
-.form__input:focus,
-.form__input:hover {
-    border-color: var(--blue-hover);
-}
-
-.form__input:focus+.form__icon,
-.form__input:hover+.form__icon {
-    fill: var(--blue-hover);
+    &:nth-last-child(2) {
+        padding-top: 12px;
+        padding-left: 16px;
+    }
+    
+    &:focus,
+    &:hover {
+        border-color: var(--blue-hover);
+    }
+    
+    &:focus+.form__icon,
+    &:hover+.form__icon {
+        fill: var(--blue-hover);
+    }
+    
 }
 
 .form__icon:hover {
@@ -138,11 +166,18 @@
 .checkbox {
     color: var(--gray-text);
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     margin-bottom: 30px;
     cursor: pointer;
+}
+
+.checkbox {
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 .checkbox__label {

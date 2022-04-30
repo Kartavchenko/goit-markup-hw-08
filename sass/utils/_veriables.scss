@@ -25,18 +25,3 @@
     /* cubic */
     --cubic-anm: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.container {
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-
-    @media screen and (min-width: 768px) {
-        width: 768px;
-        }
-
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
-    }
-}

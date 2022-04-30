@@ -1,0 +1,39 @@
+.menu-btn {
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    z-index: 10;
+
+    background-color: #ffffff;
+    border: transparent;
+    outline: transparent;
+
+    &__icon {
+        width: 44px;
+        height: 44px;
+
+        &-open {
+            opacity: 1;
+        }
+
+        &-close {
+            opacity: 0;
+        }
+    }
+    
+}
+
+.menu-btn.is-active .menu-btn__icon-open {
+    opacity: 0;
+}
+
+.menu-btn.is-active .menu-btn__icon-close {
+    opacity: 1;
+}
