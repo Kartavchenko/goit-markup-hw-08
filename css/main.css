@@ -137,10 +137,8 @@ a {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .current {
-    color: var(--blue-hover);
-  }
+.current {
+  color: var(--blue-hover);
 }
 
 @media screen and (min-width: 1200px) {
@@ -246,6 +244,10 @@ a {
   opacity: 1;
 }
 
+.menu-btn:hover, .menu-btn:focus {
+  fill: var(--blue-bnt);
+}
+
 @media screen and (max-width: 767px) {
   .mobile-menu {
     position: fixed;
@@ -292,6 +294,10 @@ a {
     line-height: 1.17;
     letter-spacing: 0.02em;
   }
+}
+
+.current {
+  color: var(--accent-color);
 }
 
 @media screen and (max-width: 767px) {

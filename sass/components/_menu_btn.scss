@@ -37,3 +37,7 @@
 .menu-btn.is-active .menu-btn__icon-close {
     opacity: 1;
 }
+
+.menu-btn:hover, .menu-btn:focus {
+    fill: var(--blue-bnt);
+}

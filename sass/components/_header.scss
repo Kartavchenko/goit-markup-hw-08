@@ -79,10 +79,7 @@
 }
 
 .current {
-    @media screen and (min-width: 1200px) {
-        color: var(--blue-hover);
-    }
-    
+    color: var(--blue-hover);
 }
 
 .current::after {
