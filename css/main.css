@@ -171,7 +171,7 @@ a {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .contact__item {
     margin-right: 50px;
   }
@@ -746,6 +746,15 @@ a {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .content__item {
+    margin-bottom: 30px;
+  }
+  .content__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .content__item {
     margin: 15px;
@@ -902,8 +911,10 @@ a {
   }
 }
 
-.team__item:last-child {
-  margin-right: 0;
+@media screen and (max-width: 767px) {
+  .team__item:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .team-frame {
@@ -974,26 +985,26 @@ a {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
 .company__item {
-  margin-right: 30px;
-  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-top: 30px;
   height: 92px;
   width: calc((100% - 60px) / 2);
 }
 
 @media screen and (min-width: 768px) {
   .company__item {
-    width: calc((100% - 90px) / 4);
+    width: calc((100% - 90px) / 3);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .company__item {
-    width: calc((100% - 150px) / 7);
+    width: calc((100% - 180px) / 6);
   }
 }
 
@@ -1056,20 +1067,19 @@ a {
 @media screen and (min-width: 768px) {
   .footer-contact__tablet {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: baseline;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-contact__tablet {
     margin-bottom: 60px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer-contact {
-    margin-right: 165px;
-  }
-}
-
 @media screen and (max-width: 767px) {
-  .footer-contact__list {
+  .footer-contact {
     margin-bottom: 60px;
   }
 }
@@ -1127,12 +1137,6 @@ a {
 .social-media__list {
   display: flex;
   justify-content: center;
-}
-
-@media screen and (max-width: 1199px) {
-  .social-media__list {
-    margin-bottom: 60px;
-  }
 }
 
 .social-media__item {
@@ -1265,13 +1269,19 @@ a {
 .button__list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
   .button__list {
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .button__list {
     margin-bottom: 50px;
   }
 }
@@ -1283,6 +1293,9 @@ a {
 @media screen and (max-width: 767px) {
   .button__item {
     margin-bottom: 10px;
+  }
+  .button__item:nth-child(4), .button__item:nth-child(5) {
+    margin-bottom: 0;
   }
 }
 

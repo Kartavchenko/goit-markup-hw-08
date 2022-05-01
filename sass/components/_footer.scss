@@ -25,23 +25,20 @@
 
     @media screen and (min-width: 768px) {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: baseline;
+        
+    }
+
+    @media screen and (max-width: 1199px) {
         margin-bottom: 60px;
     }
 }
 
 .footer-contact {
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        margin-right: 165px;
-    }
-}
-
-.footer-contact__list {
     @media screen and (max-width: 767px) {
         margin-bottom: 60px;
     }
-    
 }
 
 .footer-contact__link {
@@ -99,9 +96,7 @@
 .social-media__list {
     display: flex;
     justify-content: center;
-    @media screen and (max-width: 1199px) {
-        margin-bottom: 60px;
-    }
+    
     
 }
 

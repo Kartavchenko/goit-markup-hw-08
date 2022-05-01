@@ -3,22 +3,22 @@
     // align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
+    margin-left: -30px;
+    margin-top: -30px;
 }
 
 .company__item {
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
     height: 92px;
     width: calc((100% - 60px) / 2);
 
     @media screen and (min-width: 768px) {
-        width: calc((100% - 90px) / 4);
+        width: calc((100% - 90px) / 3);
     }
 
     @media screen and (min-width: 1200px) {
-        width: calc((100% - 150px) / 7);
+        width: calc((100% - 180px) / 6);
     }
 }
 
